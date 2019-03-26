@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filter</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <style>
+      .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                                supported by Chrome and Opera */
+      }
+      .block-style {
+        display: block;
+      }
+      .main {
+        margin: 5px;
+      }
+      #main {
+        margin-top: 15px;
+      }
+      .apply-clear-buttons {
+        margin: 0 5px;
+      }
+      .fields-style {
+        margin: 5px;
+      }
+    </style>
+    <div class="noselect block-style" id="main"></div>
+    <div class="noselect block-style main" id="add-condition-button">
+      <button id="add-condition" class="btn btn-link">+ Add Condition</button>
+    </div>
+    <hr />
+    <div class="noselect block-style main" id="apply-clear-buttons">
+      <button id="apply" class="btn btn-primary btn-sm apply-clear-buttons">
+        Apply</button
+      ><button
+        id="clear-filter"
+        class="btn btn-light btn-sm apply-clear-buttons"
+      >
+        Clear filter
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
